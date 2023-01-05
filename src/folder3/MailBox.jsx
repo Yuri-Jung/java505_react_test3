@@ -2,10 +2,11 @@
 
 import React from "react";
 
+// App6 ->  <MailBox unreadMessages={50}/>로 데이터를 받았음
 function MailBox(props){
     const unreadMessages = props.unreadMessages;
 
-    //inline if : jsx 문법으로 렌더링을 진행하는 render()함수 내부에서 if 문을 사용할 수 없기 때문에
+    // inline if : jsx 문법으로 렌더링을 진행하는 render()함수 내부에서 if 문을 사용할 수 없기 때문에
     // '&&'를 사용하거나 삼항 연산자를 고려하여 조건부 렌더링을 진행할 수 있음
 
     // && 연산자 사용시 && 오른쪽에 있는 피연산자는 왼쪽에 있는 피연산자의 값에 따라 렌더링이 결정된다.

@@ -15,7 +15,7 @@ function UserStatus (props){
     //     return ("로그인한 상태입니다.")
     // }
 
-    const flag = props.isLoggedIn;
+    const flag = props.isLoggedIn; // false 다.
     if(flag){
         return <p>사용자는 현재 <b>로그인</b>상태입니다.</p>
     }

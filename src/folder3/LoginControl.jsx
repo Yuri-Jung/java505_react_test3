@@ -5,8 +5,8 @@ import Greeting from "./Greeting";
 import UserStatus from "./UserStatus";
 
 
-
-function LoginButton (props) {
+// 버튼 두 가지 생성 (로그인 버전, 비로그인 버전)
+function LoginButton (props) { 
     return (
         <button type={"button"} onClick={props.onClick}>로그인</button>
     );
@@ -23,6 +23,8 @@ function LoginControl(props){
     const [isLoggedIn, setIsLoggedIn] = useState(false);
 
     // 자바스크립트는 변수에 함수도 저장가능하다.
+
+    //이 거를 실행하면 true로 변경시킨다.
     const handleLoginClick = () => {
         setIsLoggedIn(true);
     }
@@ -35,6 +37,8 @@ function LoginControl(props){
     let button;
     
     // state의 상태에 따라서 element 변수에 저장될 리액트 컴포넌트를 변경
+    // 위에 있는 state다. isLoggedIn,setIsLoggedIn
+    // true인 상태면 버튼은 로그아웃이라고 보이고 누르면 로그아웃이 되면서 상태를 false로 변환시킨다.
     if (isLoggedIn) {
         button = <LogoutButton onClick = {handleLogoutClick}/>;
     }

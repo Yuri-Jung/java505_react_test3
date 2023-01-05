@@ -2,11 +2,14 @@
 
 import React from "react";
 
+
+// App6에서 <Greeting isLoggedIn = {false}/>으로 하고 있다.
 function Greeting(props){
-    const isLoggedIn = props.isLoggedIn;
+    const isLoggedIn = props.isLoggedIn; //false값 들어간다
 
     if (isLoggedIn) {
-        return <UserGreeting/>
+        //if (isLoggedIn==true)과 동일. 현재 false이기 때문에 아래에 있는 <GuestGreeting/>이 실행된다.
+        return <UserGreeting/> // 아래에 있는 함수
     }
 
     return <GuestGreeting/>

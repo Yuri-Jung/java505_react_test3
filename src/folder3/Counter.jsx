@@ -9,6 +9,7 @@ function Counter(props) {
     return(
         <div>
             {/*앞의 조건 false다. 데이터를 넣지 않았으니까. 그러니까 위의 0만 출력하고 끝난다.*/}
+            {/*숫자를 2,3 등으로 바꾸면 화면이 바뀐다.*/}
             {count && <h1>현재 카운트 : {count}</h1>}
         </div>
     );
