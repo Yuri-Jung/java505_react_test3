@@ -8,6 +8,17 @@ import App3 from "./App3";
 import App33 from "./App33";
 import App5 from "./App5";
 import App6 from "./App6";
+import App7 from "./App7";
+import App77 from "./App77";
+
+
+
+
+
+
+
+
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -19,14 +30,16 @@ root.render(
 
     //{/*/!*     strict 모드란 react 앱 내의 잠재적인 문제를 알아내기 위한 도구라고 나와있습니다.*!/,*/}
     //{/*/!*<App />*!/*/}
-    //{/*/!*    <App2/>*!/*/}
-    //{/*/!*    <App3/>*!/*/}
-    //{/*/!*    <App33/>*!/*/}
+    // <App2/>
+ // <App3/>
+    // <App33/>
     //{/*    */}
 
     //{/*/!*</React.StrictMode>*!/*/}
 // <App5/>
-    <App6/>
+//     <App6/>
+    <App7/>
+//     <App77/>
 
 );
 
