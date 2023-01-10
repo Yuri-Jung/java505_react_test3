@@ -10,6 +10,7 @@ import App5 from "./App5";
 import App6 from "./App6";
 import App7 from "./App7";
 import App77 from "./App77";
+import App8 from "./App8";
 
 
 
@@ -38,8 +39,9 @@ root.render(
     //{/*/!*</React.StrictMode>*!/*/}
 // <App5/>
 //     <App6/>
-    <App7/>
+//     <App7/>
 //     <App77/>
+    <App8/>
 
 );
 
